@@ -1,8 +1,10 @@
-OSI MODEL describes seven layers that computer systems use to communicate over a network.
+#### OSI MODEL describes seven layers that computer systems use to communicate over a network.
 
 Let's Discuss
 
-OSI Model : a multi-layered system that handles everything from the physical aspects of your devices and networks to how data is efficiently transported, checked, and presented in a way that your applications can understand.
+### OSI Model 
+
+A multi-layered system that handles everything from the physical aspects of your devices and networks to how data is efficiently transported, checked, and presented in a way that your applications can understand.
 
 1. Physical Layer (Layer 1): Manages the physical connection and raw data transmission. 
       Example :  Ethernet, USB, Fiber optic cables.
@@ -22,7 +24,9 @@ OSI Model : a multi-layered system that handles everything from the physical asp
 
 
 
-Connection-Oriented : Acknowledgement of receiving the data is sent from the server to the client ; Incase of data loss and error , the data is re-sent from client to the server
+#### Connection-Oriented 
+
+Acknowledgement of receiving the data is sent from the server to the client ; Incase of data loss and error , the data is re-sent from client to the server
         
     Here's a step-by-step breakdown of how acknowledgments work in a TCP-based client-server communication:
 
@@ -33,36 +37,49 @@ Connection-Oriented : Acknowledgement of receiving the data is sent from the ser
         5. This process continues until all data has been successfully received by the server.
 
 
-Connectionless : Client sends data to the server without expecting an Acknowledgement from the server i.e whether the data is received or not.
+#### Connectionless 
 
-IP (Internet Protocol): connectionless & unreliable
+Client sends data to the server without expecting an Acknowledgement from the server i.e whether the data is received or not.
+
+### IP (Internet Protocol): connectionless & unreliable
+
       - IP, or Internet Protocol, is like the postal system for the internet.
       - It's in charge of addressing and delivering data packets from one computer to another.
       - Just like how you put an address on an envelope to send a letter, IP assigns a unique address to each device on the internet. This address is called an IP address.
 
-Example: Think of IP as the street address on a package you're sending through the mail.
+##### Example: 
+
+Think of IP as the street address on a package you're sending through the mail.
 If you want to send a package from your home to your friend's house, you need to put the correct addresses on it so the postal service knows where to deliver it.
 
-TCP (Transmission Control Protocol): connection-oriented & reliable
-      - TCP is like a reliable phone call. 
-      - It ensures that data sent from one computer to another arrives in the correct order and without errors. 
-      - If some data packets get lost or mixed up during transmission, TCP takes care of re-sending them. 
-      - It's a bit slower but very reliable, which makes it ideal for tasks like downloading files, sending emails, or browsing the web.
+### TCP (Transmission Control Protocol): connection-oriented & reliable
 
-Example: Imagine you're having a conversation over the phone with a friend, and you want to make sure you both get every word in the right order. 
+      1. TCP is like a reliable phone call. 
+      2. It ensures that data sent from one computer to another arrives in the correct order and without errors. 
+      3. If some data packets get lost or mixed up during transmission, TCP takes care of re-sending them. 
+      4. It's a bit slower but very reliable, which makes it ideal for tasks like downloading files, sending emails, or browsing the web.
+
+
+##### Example: 
+
+Imagine you're having a conversation over the phone with a friend, and you want to make sure you both get every word in the right order. 
 If your friend didn't hear something, they'd ask you to repeat it. This is similar to how TCP ensures all data is received correctly.
 
-UDP (User Datagram Protocol): connectionless & unreliable
-      - UDP is like sending a postcard. 
-      - It's faster and more lightweight than TCP but not as reliable.
-      - With UDP, you send data without confirming if it was received correctly. 
-      - It's great for real-time applications like online gaming, live video streaming, or voice calls where a small delay is acceptable, and you'd rather not wait for missing or out-of-order data to be retransmitted.
+### UDP (User Datagram Protocol): connectionless & unreliable
 
-Example: Imagine you're sending a postcard to your friend while on vacation. 
+      1. UDP is like sending a postcard. 
+      2. It's faster and more lightweight than TCP but not as reliable.
+      3. With UDP, you send data without confirming if it was received correctly. 
+      4. It's great for real-time applications like online gaming, live video streaming, or voice calls where a small delay is acceptable, and you'd rather not wait for missing or out-of-order data to be retransmitted.
+
+##### Example: 
+
+Imagine you're sending a postcard to your friend while on vacation. 
 You write a quick message and drop it in the mailbox, but you don't know if it arrives or if it's read in the right order. 
 This is similar to how UDP works—quick and not worried about confirming receipt.
 
-In summary, 
+##### In summary, 
+
     IP gives devices their unique addresses on the internet, 
     TCP is like a careful and reliable phone call ensuring data arrives correctly, 
     and UDP is like a fast postcard delivery that doesn't worry too much about ensuring every piece of data arrives in order or at all. 
@@ -71,4 +88,4 @@ Each of these protocols has its own use cases depending on the needs of the appl
 
 
 
-// Let's Discuss 3-Way Handshake in next blog //
+###### // Let's Discuss 3-Way Handshake in next blog //
